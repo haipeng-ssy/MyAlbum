@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package haipeng.myalbum.imageload;
+package haipeng.myalbum.Utils;
 
 import android.os.Build;
 

@@ -39,6 +39,7 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import haipeng.myalbum.BuildConfig;
+import haipeng.myalbum.Utils.Loger;
 
 
 /**

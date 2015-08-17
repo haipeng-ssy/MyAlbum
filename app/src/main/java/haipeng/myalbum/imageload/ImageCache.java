@@ -19,7 +19,6 @@ package haipeng.myalbum.imageload;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -39,6 +38,8 @@ import android.support.v4.util.LruCache;
 import android.util.Log;
 
 import haipeng.myalbum.BuildConfig;
+import haipeng.myalbum.Utils.Loger;
+import haipeng.myalbum.Utils.SDKVersionUtil;
 
 
 /**

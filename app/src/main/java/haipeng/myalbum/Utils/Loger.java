@@ -1,4 +1,4 @@
-package haipeng.myalbum.imageload;
+package haipeng.myalbum.Utils;
 
 import android.util.Log;
 

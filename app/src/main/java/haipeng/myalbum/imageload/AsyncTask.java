@@ -38,6 +38,8 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Process;
 
+import haipeng.myalbum.Utils.SDKVersionUtil;
+
 /**
  * *************************************
  * Copied from JB release framework:

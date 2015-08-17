@@ -2,7 +2,6 @@ package haipeng.myalbum;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.GridLayout;
 import android.widget.GridView;
 
 /**
