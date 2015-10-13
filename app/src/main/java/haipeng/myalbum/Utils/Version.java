@@ -5,11 +5,12 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
 public class Version {
 
 	public static String getVersionName() {
-		Context context = new Application();
+		Context context = BaseApplication.getContext();
 		PackageManager pm = context.getPackageManager();
 		PackageInfo pi;
 		try {
@@ -23,7 +24,8 @@ public class Version {
 	}
 
 	public static int getVersionCode() {
-		Context context = new Application();
+		Log.i("tag","getVersionCode()");
+		Context context = BaseApplication.getContext();
 		PackageManager pm = context.getPackageManager();
 		PackageInfo pi;
 		try {

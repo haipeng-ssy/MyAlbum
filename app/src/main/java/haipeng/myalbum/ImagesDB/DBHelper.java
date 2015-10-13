@@ -11,22 +11,24 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import haipeng.myalbum.App.Constacts;
+import haipeng.myalbum.Utils.BaseApplication;
+
 public abstract class DBHelper extends SQLiteOpenHelper {
 
 	SQLiteDatabase db;
-	static String dbFolderPath;
 	List<String> mTableCreateSqls;
 
 	public DBHelper(String dbName, int dbVersion, List<String> tablecreateSqls) {
 		super(new OutAppDatabaseContext(
-				new Application().getApplicationContext(), dbFolderPath),
+						BaseApplication.getContext(), Constacts.MyAlbumDBPath),
 				dbName, null, dbVersion);
 		mTableCreateSqls = tablecreateSqls;
 		if (db == null) {
 			db = getWritableDatabase();
 		}
 		// 如果数据库被删除了，重新建立数据库
-		if (!(new File(dbFolderPath + dbName)).exists()) {
+		if (!(new File(Constacts.MyAlbumDBPath+File.separator + dbName)).exists()) {
 			onCreate(db);
 		}
 	}

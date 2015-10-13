@@ -4,22 +4,40 @@ package haipeng.myalbum.entity;
  * Created by Administrator on 2015/8/14.
  */
 public class Album {
-    private String name;
-    private String path;
+    String image_name ;
+    String isParent ;
+    String isChild ;
+    String folderPath;
 
-    public void setPath(String path) {
-        this.path = path;
+    public void setFolderPath(String folderPath) {
+        this.folderPath = folderPath;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setImage_name(String image_name) {
+        this.image_name = image_name;
     }
 
-    public String getPath() {
-        return path;
+    public void setIsParent(String isParent) {
+        this.isParent = isParent;
     }
 
-    public String getName() {
-        return name;
+    public void setIsChild(String isChild) {
+        this.isChild = isChild;
+    }
+
+    public String getFolderPath() {
+        return folderPath;
+    }
+
+    public String getImage_name() {
+        return image_name;
+    }
+
+    public String getIsParent() {
+        return isParent;
+    }
+
+    public String getIsChild() {
+        return isChild;
     }
 }

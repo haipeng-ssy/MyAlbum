@@ -109,7 +109,7 @@ public final class DiskLruCache implements Closeable {
     private static final String READ = "READ";
 
     private static final Charset UTF_8 = Charset.forName("UTF-8");
-    private static final int IO_BUFFER_SIZE = 8 * 1024;
+    private static final int IO_BUFFER_SIZE = 30 * 1024;
 
     /*
      * This cache uses a journal file named "journal". A typical journal file

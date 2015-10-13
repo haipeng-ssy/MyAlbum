@@ -21,7 +21,7 @@ public class OutAppDatabaseContext extends ContextWrapper{
 	
 	@Override
 	public File getDatabasePath(String name) {
-		File file = new File(mDbFolderPath+name);
+		File file = new File(mDbFolderPath+File.separator+name);
 		if(!file.getParentFile().exists())
 		{
 			file.getParentFile().mkdirs();
